@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+// Definição da estrutura de dados para um personagem
+struct Personagem {
+    char nome[50];
+    int idade;
+    char classe[20];
+    float vida;
+};
+
+int main() {
+    // Criação de um novo personagem
+    struct Personagem heroi;
+    strcpy(heroi.nome, "João");
+    heroi.idade = 25;
+    strcpy(heroi.classe, "Guerreiro");
+    heroi.vida = 100.0;
+
+    // Exibição das informações do personagem
+    printf("Nome: %s\n", heroi.nome);
+    printf("Idade: %d\n", heroi.idade);
+    printf("Classe: %s\n", heroi.classe);
+    printf("Vida: %.2f\n", heroi.vida);
+
+    return 0;
+}
